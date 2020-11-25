@@ -13,21 +13,20 @@ body {
 
 /* filhos do body */
 header {
-    width: 90%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-height: 20%;
+    min-height: 4rem;
+    margin: 0.8rem;
+    padding: 0.2rem;
 }
 
 footer {
     position: fixed;
     display: flex;
     bottom: 0;
-    left: 0;
-    height: 8%;
+    min-height: 3rem;
     width: 100%;
     background-color: #2C5445;
     justify-content: space-around;
@@ -38,9 +37,12 @@ main {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 1rem;
+    padding: 1rem;
 }
+
 
 
 /* filhos do main */
@@ -48,18 +50,44 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 p {
     font-size: 1rem;
 }
 
-.foto_perfil, .configuracoes {
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.foto_perfil {
     width: 2.5rem;
     height: 2.5rem;
 }
 
+.configuracoes {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .foto_entrar {
-    width: 30%;
-    height: 20%;
+    width: 8rem;
+    height: 8rem;
 }
 
 .logo {
@@ -68,18 +96,20 @@ p {
     align-items: center;
 }
 
-.botao {
-    padding: 1rem;
-}
-
-.entrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-}
-
 .footer {
     height: 2.5rem;
     width: 2.5rem;
+}
+
+.botao {
+    font-weight: bold;
+}
+
+.logo_entrada {
+    width: 4rem;
+    height: 4rem;
+}
+
+.caixas_dos_foruns {
+    margin: 1rem;
 }
