@@ -20,28 +20,29 @@
             <input type="text" placeholder="Pesquisar">
 
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'tab_foruns')">Fóruns</button>
-                <button class="tablinks" onclick="openCity(event, 'tab_pessoas')">Pessoas</button>
+                <button class="tablink" onclick="openPage('tab_foruns', this, 'blue')">Forum</button>
+                <button class="tablink" onclick="openPage('tab_pessoas', this, 'orange')">pessoas</button>
             </div>
 
             <div id="tab_foruns" class="tabcontent">
-                <input type="checkbox" id="opcao1" name="empreendimentos_sociais">
+                <input type="checkbox" id="opcao1" name="empreendimentos sociais">
                 <label for="empreendimentos sociais"> Empreendimentos sociais</label><br>
 
-                <input type="checkbox" id="opcao2" name="saude">
+                <input type="checkbox" id="opcao2" name="saúde">
                 <label for="saúde"> Saúde</label><br>
 
-                <input type="checkbox" id="opcao3" name="juridico">
+                <input type="checkbox" id="opcao3" name="jurídico">
                 <label for="jurídico"> Jurídico</label><br>
 
-                <input type="checkbox" id="opcao4" name="alimentacao">
+                <input type="checkbox" id="opcao4" name="alimentação">
                 <label for="alimentação"> Alimentação</label><br>
 
-                <input type="checkbox" id="opcao5" name="educacao">
-                <label for="educacao"> Educação</label><br>
+                <input type="checkbox" id="opcao5" name="educação">
+                <label for="educação"> Educação</label><br>
 
                 <a class='botao' href=".html">
                     OK ➡︎
+                </a>
             </div>
 
             <div id="tab_pessoas" class="tabcontent">
@@ -68,6 +69,10 @@
     
                 <input type="checkbox" id="opcao8" name="programador">
                 <label for="programador"> Programador</label><br>
+
+                <a class='botao' href=".html">
+                    OK ➡︎
+                </a>
             </div>
 
         </main>
