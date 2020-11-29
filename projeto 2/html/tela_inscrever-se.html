@@ -7,21 +7,18 @@
         <link rel="stylesheet" href="../css/resset.css">
         <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=PT+Sans&family=PT+Serif&family=Raleway&display=swap" rel="stylesheet">
-        <script src="../js/java.js"></script>
+        <script src="../js/cadastro.js"></script>
     </head>
     <body>
         <header>
-            <a class="botao">
+            <a class="botao_ok">
                 OK
             </a>
         </header>
 
         <main>
-          <img class='foto_perfil' src='img/perfil_inativo.jpeg' alt='ícone de uma pessoa inativa'>
-
-          <main>
+          <img class='foto_inscricao' src='img/perfil_inativo.jpeg' alt='ícone de uma pessoa inativa'>
           
-
             <form>
 
                 <label for="Nome">Nome:</label>
@@ -37,7 +34,7 @@
                     <option value="Deputado">Deputado</option>
                     <option value="Dentista">Dentista</option>
                     <option value="Veterinário">Veterinário</option>
-                    <option value="Engenhero">Engenhero</option>
+                    <option value="Engenhero">Engenheiro</option>
                     <option value="Professor">Professor</option>
                     <option value="Programador">Programador</option>
                 </select>
@@ -49,22 +46,22 @@
                 <input type="password" id="Senha" name="Senha">
 
                 <label for="Sobre você">Sobre você:</label>
-                <textarea id="Sobre você" rows="10" cols="30">
-                    Conte um pouco sobre você.
+                <textarea id="Sobre você" rows="10" cols="30">Conte um pouco sobre você.
                 </textarea>
 
-                <h2> Cadastrar Empresa:</h2>
-                <input type="radio" id="Sim" name="resposta" value="Sim">
-                <label for="Sim">Sim</label>
-                <input type="radio" id="Não" name="resposta" value="Não">
-                <label for="Não">Não</label>
+                <h3> Cadastrar Empresa: </h3>
+                <div class = "radio_button">
+                    <input type="radio" id="Sim" name="resposta" value="Sim">
+                    <label for="Sim">Sim</label>
+                    <input type="radio" id="Não" name="resposta" value="Não">
+                    <label for="Não">Não</label>
+                </div>
 
                 <label for="Nome da empresa">Nome da empresa:</label>
                 <input type="text" id="Nome da empresa" name="Nome da empresa">
                 
                 <label for="Descrição_da_empresa">Descrição da empresa:</label>
-                <textarea id="Descrição da empresa" rows="10" cols="30">
-                    Conte um pouco sobre sua empresa.
+                <textarea id="Descrição da empresa" rows="10" cols="30">Conte um pouco sobre sua empresa.
                 </textarea>
                 
                 <input type = 'submit'>
