@@ -19,28 +19,55 @@
         <main>
           <img class='foto_perfil' src='img/perfil_inativo.jpeg' alt='ícone de uma pessoa inativa'>
 
+          <main>
+          
+
             <form>
-                <label>
-                    <p>Nome:</p>
-                    <input type="text">
 
+                <label for="Nome">Nome:</label>
+                <input type="text" id="Nome" name="Nome">
 
-                    <p>Profissão:</p>
-                    <input type="text">
-                    <p>Email:</p>
-                    <input type="text">
-                    <p>Senha:</p>
-                    <input type="text">
-                    <p>Sobre você:</p>
-                    <input type="text">
+                <label for="Data de Nascimento">Data de Nascimento:</label>
+                <input type="date" id="Data de Nascimento" name="Data de Nascimento">
+                
+                <label for="Profissão">Profissão:</label>
+                <select id="Profissão" name="Profissão">
+                    <option value="Advogado">Advogado</option>
+                    <option value="Médico">Médico</option>
+                    <option value="Deputado">Deputado</option>
+                    <option value="Dentista">Dentista</option>
+                    <option value="Veterinário">Veterinário</option>
+                    <option value="Engenhero">Engenhero</option>
+                    <option value="Professor">Professor</option>
+                    <option value="Programador">Programador</option>
+                </select>
 
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
 
-                    <p>Nome da empresa:</p>
-                    <input type="text">
-                    <p>Descrição da empresa:</p>
-                    <input type="text">
-                </label>
-                <input type="submit" value="Entrar" href=".html">
+                <label for="Senha">Senha:</label>
+                <input type="password" id="Senha" name="Senha">
+
+                <label for="Sobre você">Sobre você:</label>
+                <textarea id="Sobre você" rows="10" cols="30">
+                    Conte um pouco sobre você.
+                </textarea>
+
+                <h2> Cadastrar Empresa:</h2>
+                <input type="radio" id="Sim" name="resposta" value="Sim">
+                <label for="Sim">Sim</label>
+                <input type="radio" id="Não" name="resposta" value="Não">
+                <label for="Não">Não</label>
+
+                <label for="Nome da empresa">Nome da empresa:</label>
+                <input type="text" id="Nome da empresa" name="Nome da empresa">
+                
+                <label for="Descrição_da_empresa">Descrição da empresa:</label>
+                <textarea id="Descrição da empresa" rows="10" cols="30">
+                    Conte um pouco sobre sua empresa.
+                </textarea>
+                
+                <input type = 'submit'>
             </form>
         </main>
     </body>
