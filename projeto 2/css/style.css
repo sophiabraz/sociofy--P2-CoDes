@@ -15,7 +15,7 @@ body {
 /* filhos do body */
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     min-height: 4rem;
@@ -67,11 +67,11 @@ h2 {
 h3 {
     font-size: 1rem;
     font-weight: bold;
-    margin: 0.5rem;
 }
 
 p {
     font-size: 1rem;
+    margin: 0.5rem 0rem;
 }
 
 .logo {
@@ -104,7 +104,23 @@ form {
 }
 
 label {
-    margin: 0.5rem;
+    margin: 0.7rem 0rem;
+}
+
+textarea {
+    margin: 0.7rem 0rem;
+}
+
+.cadastro_emp {
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+    padding-right: 0.5rem;
+}
+
+.radio_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
 }
 
 .botao_entrar {
@@ -133,7 +149,6 @@ label {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 5rem;
-    align-self: center;
 }
 
 .foto_inscricao {
@@ -175,50 +190,60 @@ select {
 }
 
 
-
-
-
-
-.radio_button {
+/* Style tab links */
+.tab {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tablink {
+    background-color: #23A171;
+    color: white;
+    float: left;
+    outline: none;
+    border: solid #2C5445;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 8rem;
+    border-radius: 1rem;
     
 }
 
-
-/* Style tab links */
-.tablink {
-    background-color: #555;
+.active {
+    background-color: #23A171;
     color: white;
     float: left;
-    border: none;
     outline: none;
+    border-top: solid #2C5445;
+    border-right: solid #2C5445;
+    border-left: solid #2C5445;
+    border-bottom: none;
     cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-  }
-  
-  .tablink:hover {
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 8rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.tablin:hover {
     background-color: #777;
-  }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    background-color: #2FD494;
     color: rgb(5, 5, 5);
     display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
-  
-  #Home {background-color: red;}
-  #News {background-color: green;}
-  #Contact {background-color: blue;}
-  #About {background-color: orange;}
+    padding: 3rem 1.25rem;
+    border: solid #2C5445;
+}
 
-  .sent{
+.sent{
     align-self: flex-end;
     background-color: #2C5445;
-
 }
+
