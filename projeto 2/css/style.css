@@ -67,6 +67,7 @@ h2 {
 h3 {
     font-size: 1rem;
     font-weight: bold;
+    padding: 0.5rem;
 }
 
 p {
@@ -168,7 +169,7 @@ select {
     padding: 0.3rem;
 }
 
-.caixas_dos_foruns {
+.caixas {
     margin: 1rem;
     margin-left:0;
     border: 0.1rem solid #2C5445;
@@ -194,6 +195,10 @@ li {
     margin: 0.8rem;
 }
 
+.lupa_clara { 
+    margin-left: 3%;
+    width: ;
+}
 .footer {
     height: 2.5rem;
     width: 2.5rem;
@@ -219,8 +224,8 @@ li {
     font-size: 1.2rem;
     width: 8rem;
     border-radius: 1rem;
-    
 }
+
 
 .active {
     background-color: #23A171;
