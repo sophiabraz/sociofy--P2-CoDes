@@ -74,6 +74,12 @@ p {
     margin: 0.5rem 0rem;
 }
 
+.erro {
+    text-align: center;
+    padding: 3rem;
+    margin: 5rem 1rem;  
+}
+
 .logo {
     width: 15rem;
     height: 15rem;
@@ -184,6 +190,10 @@ select {
     text-decoration: none;
 }
 
+li {
+    margin: 0.8rem;
+}
+
 .footer {
     height: 2.5rem;
     width: 2.5rem;
@@ -238,7 +248,7 @@ select {
     background-color: #2FD494;
     color: rgb(5, 5, 5);
     display: none;
-    padding: 3rem 1.25rem;
+    padding: 2rem 1rem;
     border: solid #2C5445;
 }
 
