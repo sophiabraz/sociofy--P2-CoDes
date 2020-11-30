@@ -27,3 +27,6 @@ function openPage(pageName, elmnt, color, clicou) {
   // Add the specific color to the button used to open the tab content
   
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('input[type="submit"]');
