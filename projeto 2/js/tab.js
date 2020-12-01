@@ -28,6 +28,7 @@ function openPage(pageName, elmnt, color, clicou) {
   
 }
 
+<<<<<<< HEAD
 function filtros() {
   var submit,options;
 
@@ -43,3 +44,7 @@ function filtros() {
 
 
 }
+=======
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('input[type="submit"]');
+>>>>>>> 4e09f9da7e6d0b081d16d33c84ac8d717dfebbdf
