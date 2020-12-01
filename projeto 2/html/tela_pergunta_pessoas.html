@@ -7,24 +7,26 @@
         <link rel="stylesheet" href="../css/resset.css">
         <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=PT+Sans&family=PT+Serif&family=Raleway&display=swap" rel="stylesheet">
+        <script src="../js/pesquisa.js"></script>
     </head>
-    <body>
+    <body onload="aplicaFiltros()">
         <header>
             <img class='foto_perfil' src='img/perfil_inativo.jpeg' alt='ícone de uma pessoa inativa'>
             <figure class='configuracoes'>⚙️</figure>
         </header>
-        <form>
-            <img class='lupa_clara' src='img/lupa_clara.png' alt='ícone de uma lupa'>
-            <!-- Aqui (no label) mostramos o que a pessoa clicou na tela anterior-->
-            <label>
-                <p>Pesquisar:</p>
-                <input type="text">
+        
+        <main> 
+            <form class="pesquisa">
+                <a onclick="guardaPesquisa()" href="tela_resultados_forum.html">
+                    <img class='lupa_clara' src='img/lupa_clara.png' alt='ícone de uma lupa' >
+                </a>
+                <!-- Aqui (no label) mostramos o que a pessoa clicou na tela anterior-->
+                <label>
+                    <input type="text">
+                </label>
+                <!-- <input type="submit" value="Entrar" href='tela_menu.html'> -->
+            </form>
 
-            </label>
-            
-            <!-- <input type="submit" value="Entrar" href='tela_menu.html'> -->
-        </form>
-        <main>
             <h1>Perfis Recomendados:</h1>
 
             <a class="caixas" href = 'tela_erro.html'>

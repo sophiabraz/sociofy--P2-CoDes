@@ -45,7 +45,7 @@ main {
     padding: 1rem;
 }
 
-.inicio{
+.inicio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +110,15 @@ p {
     border-radius: 5rem;
 }
 
+.forum_barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .barra_comentarios {
+    display: flex;
+    flex-direction: row;
     margin: 1rem;
     border: 0.1rem solid #2C5445;
     padding: 0.5rem;
@@ -120,19 +128,41 @@ p {
     text-decoration: none;
 }
 
+.likes {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.nome_usuario {
+    font-weight: bold;
+}
+
+.cada_comentario {
+    border: 0.1rem solid #23A171;
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+    padding-left: 0.3rem;
+}
+
 .botao_pessoa {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
 
+.pesquisa {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    padding: 2rem;
 }
 
 form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-grow: 1;
     padding: 2rem;
-
 }
 
 label {
@@ -238,8 +268,16 @@ li {
     margin: 0.8rem;
 }
 
+.mensagens {
+
+}
+
+.mensagens_pessoas {
+
+}
+
 .lupa_clara { 
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
     width: 1.5rem;
     height: 1.5rem;
 }

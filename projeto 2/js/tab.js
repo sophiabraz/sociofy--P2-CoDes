@@ -27,3 +27,19 @@ function openPage(pageName, elmnt, color, clicou) {
   // Add the specific color to the button used to open the tab content
   
 }
+
+function filtros() {
+  var submit,options;
+
+  submit = document.querySelectorAll('a')
+
+  options = document.querySelectorAll('input[type="checkbox"]')
+
+  for ( var j = 0 , lenghth = options.length; j< lenghth ; j++) {
+    if(options[j].checked) {
+      localStorage.setItem(options[j].id,options[j].getAttribute("Name"));
+    }
+  }
+
+
+}

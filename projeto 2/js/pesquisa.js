@@ -1,10 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-    submit = document.querySelector('input[type="submit"]');
-    submit.addEventListener('click', function(event) {
-        for ( var j = 0 , lenghth = cadastrar_empresa.length; j< lenghth ; j++) {
-            if(cadastrar_empresa[j].checked) {
-                y = cadastrar_empresa[j].value
-            }
-        } 
+function aplicaFiltros(){
+    var i,opcao;
+    i=1
+    placeholder = ''
+    while(i<8){
+        id = 'opcao'+i;
+        if(id in localStorage){
+            opcao = localStorage.getItem(id)
+            placeholder += 'Pesquisa em : '+opcao+' '
+            document.getElementsByTagName('input[type="text"]').setAttribute("placeholder", placeholder);
+        }
+    }
 }
-})
+
+function guardaPesquisa(){
+    pergunta = document.querySelector('input[type="text"]');
+    localStorage.setItem('pergunta',pergunta);
+}
