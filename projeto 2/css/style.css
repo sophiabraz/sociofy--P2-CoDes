@@ -163,15 +163,12 @@ form {
     flex-direction: column;
     flex-grow: 1;
     padding: 2rem;
-<<<<<<< HEAD
-=======
 }
 
 .form_entrar {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
->>>>>>> 4e09f9da7e6d0b081d16d33c84ac8d717dfebbdf
 }
 
 label {
@@ -280,14 +277,6 @@ select {
 
 li {
     margin: 0.8rem;
-}
-
-.mensagens {
-
-}
-
-.mensagens_pessoas {
-
 }
 
 .lupa_clara { 

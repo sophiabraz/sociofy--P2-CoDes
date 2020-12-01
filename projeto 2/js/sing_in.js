@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    submit = document.querySelector('input[type="submit"]');
+    submit = document.getElementsByClassName("botao_entrar");
 
     nome = document.getElementById("Nome");
 
