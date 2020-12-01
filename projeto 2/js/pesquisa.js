@@ -1,17 +1,21 @@
 function aplicaFiltros(){
-    var i,opcao;
+    var i,opcao,lupa;
     i=1
     placeholder = ''
-    text = document.getElementsByTagName('input[type="text"]')
+    lupa = document.getElementsByClassName("lupa");
     while(i<8){
         id = 'opcao'+i;
         if(id in localStorage){
             opcao = localStorage.getItem(id)
-            placeholder += 'Pesquisa em : '+opcao+' '
-            
+            placeholder += 'Pesquise em: '+opcao+' '
         }
+        i++
     }
-    text.setAttribute("placeholder", placeholder);
+    p = document.createElement('p')
+    p.innerHTML = placeholder
+    p.classList.add("filtros")
+    lupa.parentNode.insertBefore(p,lupa);
+
 }
 
 function guardaPesquisa(){

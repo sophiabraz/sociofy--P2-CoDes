@@ -153,8 +153,7 @@ p {
 
 .pesquisa {
     display: flex;
-    flex-direction: column;
-    flex-direction: row;
+    flex-wrap: wrap;
     padding: 2rem;
 }
 
@@ -170,9 +169,16 @@ form {
     flex-direction: column;
     flex-grow: 1;
 }
+.filtros{
+    width: 100%;
+}
 
 label {
-    margin: 0.7rem 1.5rem;
+    margin: 0rem 1.5rem;
+}
+
+.barra_pesquisa {
+    width: 100%;
 }
 
 .label_entrar {
@@ -205,6 +211,10 @@ textarea {
     font-weight: bold;
     margin-right: 0%;
     margin-left: 63%;
+    text-decoration: none;
+}
+
+a, .lupa {
     text-decoration: none;
 }
 
@@ -338,6 +348,9 @@ li {
 .sent{
     align-self: flex-end;
     background-color: #2C5445;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 0.7rem;
 }
 
 

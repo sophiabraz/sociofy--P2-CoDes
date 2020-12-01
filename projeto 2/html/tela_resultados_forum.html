@@ -9,10 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=PT+Sans&family=PT+Serif&family=Raleway&display=swap" rel="stylesheet">
     <script src="../js/resultados.js"></script>
     </head>
+
     <bodyon onload="aplicaResposta()">
         <header>
-            <img class='foto_perfil' src='img/perfil_inativo.jpeg' alt='ícone de uma pessoa inativa'>
-            <figure class='configuracoes'>⚙️</figure>
+            <a href="tela_erro.html">
+                <img class='foto_perfil' src='img/perfil_inativo.jpeg' alt='ícone de uma pessoa inativa'>
+            </a>
+            <a href="tela_erro.html">
+                <figure class='configuracoes'>⚙️</figure>
+            </a>
         </header>
 
         <main>
@@ -20,9 +25,8 @@
                 <img class='lupa_clara' src='img/lupa_clara.png' alt='ícone de uma lupa' href="tela_">
                 <!-- Aqui (no label) mostramos o que a pessoa clicou na tela anterior-->
                 <label>
-                    <input type="text">
+                    <input class="barra_pesquisa" type="text">
                 </label>
-                <!-- <input type="submit" value="Entrar" href='tela_menu.html'> -->
             </form>
 
             <a class="caixas" href = 'tela_forum.html'>
