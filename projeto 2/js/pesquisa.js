@@ -1,24 +1,26 @@
-function aplicaFiltros(){
-    var i,opcao,lupa;
+function aplicaFiltros(){​​
+    var i,opcao,lupa,p;
     i=1
-    placeholder = ''
-    lupa = document.getElementsByClassName("lupa");
-    while(i<8){
+    placeholder = 'Pesquise em: '
+    lupa = document.querySelector("a[class='lupa']");
+
+    while(i<8){​​
         id = 'opcao'+i;
-        if(id in localStorage){
+        if(id in localStorage){​​
             opcao = localStorage.getItem(id)
-            placeholder += 'Pesquise em: '+opcao+' '
-        }
+            placeholder += opcao+' '
+        }​​
         i++
-    }
-    p = document.createElement('p')
+    }​​
+
+    p = document.createElement('p');
+    lupa.before(p);
     p.innerHTML = placeholder
     p.classList.add("filtros")
-    lupa.parentNode.insertBefore(p,lupa);
 
-}
+}​​
 
-function guardaPesquisa(){
+function guardaPesquisa(){​​
     pergunta = document.querySelector('input[type="text"]');
     localStorage.setItem('pergunta',pergunta);
-}
+}​​
