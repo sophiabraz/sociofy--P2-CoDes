@@ -7,10 +7,9 @@
         <link rel="stylesheet" href="../css/resset.css">
         <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=PT+Sans&family=PT+Serif&family=Raleway&display=swap" rel="stylesheet">
-    <script src="../js/resultados.js"></script>
     </head>
 
-    <body onload="aplicaResposta()">
+    <body>
         <header>
             <a href="tela_erro.html">
                 <img class='foto_perfil' src='img/perfil_inativo.jpeg' alt='ícone de uma pessoa inativa'>
@@ -21,12 +20,15 @@
         </header>
 
         <main>
-            <form class="pesquisa">
-                <img class='lupa_clara' src='img/lupa_clara.png' alt='ícone de uma lupa'>
-                <label class= 'barra_pesquisa'>
+            <div class="pesquisa">
+                <a class='lupa' onclick="guardaPesquisa()" href="tela_resultados_forum.html">
+                    <img class='lupa_clara' src='img/lupa_clara.png' alt='ícone de uma lupa' >
+                </a>
+                <!-- Aqui (no label) mostramos o que a pessoa clicou na tela anterior-->
+                <label>
                     <input type="text">
-                </label>
-            </form>
+                </label> 
+            </div>
 
             <a class="caixas" href = 'tela_forum.html'>
                 <h2> Saúde </h2>

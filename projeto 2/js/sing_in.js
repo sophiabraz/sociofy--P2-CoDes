@@ -1,22 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-    submit = document.getElementsByClassName("botao_entrar");
-
+function Verifica() {
     nome = document.getElementById("Nome");
-
     senha = document.getElementById("Senha");
+    usuario = localStorage.getItem("nome")
+    palavra_passe = localStorage.getItem("senha")
 
-
-    submit.addEventListener('click', function(event) {
-        usuario = localStorage.getItem('nome')
-        palavra_passe = localStorage.getItem('senha')
-    
-        if(nome != usuario && senha != palavra_passe ) {
-          alert('Usuario ou senha incorreto')
-          window.stop()
-        }
-    })
-
-
-  
-})
+    if (nome.value != usuario && senha.value != palavra_passe) {
+        alert('Usuário ou senha incorreto')
+        window.stop()
+    }
+}

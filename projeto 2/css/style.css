@@ -1,360 +1,345 @@
 html {
-    font-size: 16px;
-    font-family: 'PT Sans','Raleway', sans-serif;
-    height: 100%;
+    font-size : 16px;
+    font-family : 'PT Sans', 'Raleway', sans-serif;
+    height : 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: #D8F8EC;
+    display : flex;
+    flex-direction : column;
+    width : 100%;
+    height : 100%;
+    background-color : #D8F8EC;
 }
 
-/* filhos do body */
 header {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 4rem;
-    margin: 0.8rem;
-    padding: 0.2rem;
+    display : flex;
+    flex-direction : row-reverse;
+    align-items : center;
+    justify-content : space-between;
+    min-height : 4rem;
+    margin : 0.8rem;
+    padding : 0.2rem;
 }
 
 footer {
-    position: fixed;
-    display: flex;
-    bottom: 0;
-    min-height: 3rem;
-    width: 100%;
-    background-color: #2C5445;
-    justify-content: space-around;
-    align-items: center;
-
+    position : fixed;
+    display : flex;
+    bottom : 0;
+    left : 0;
+    width : 100%;
+    height : 3rem;
+    background-color : #2C5445;
+    justify-content : space-around;
+    align-items : center;
 }
 
 main {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    margin: 1rem;
-    padding: 1rem;
+    display : flex;
+    flex-grow : 1;
+    flex-direction : column;
+    justify-content : flex-start;
+    align-items : stretch;
+    margin : 1rem;
+    padding : 1rem;
 }
 
 .inicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    padding: 1rem;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    margin-top : 10rem;
+    padding : 1rem;
 }
 
-
-/* filhos do main */
 h1 {
-    font-size: 2rem;
+    font-size : 2rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size : 1.5rem;
+    font-weight : bold;
 }
 
 h3 {
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0.5rem;
+    font-size : 1rem;
+    font-weight : bold;
+    padding : 0.5rem;
 }
 
 p {
-    font-size: 1rem;
-    margin: 0.5rem 0rem;
+    font-size : 1rem;
+    margin : 0.5rem 0;
 }
 
 .erro {
-    text-align: center;
-    padding: 3rem;
-    margin: 5rem 1rem;  
+    text-align : center;
+    padding : 3rem;
+    margin : 5rem 1rem;
 }
 
 .logo {
-    width: 15rem;
-    height: 15rem;
-    padding: 0.5rem;
+    width : 15rem;
+    height : 15rem;
+    padding : 0.5rem;
+}
+
+.footer {
+    height : 2.5rem;
+    width : 2.5rem;
 }
 
 .inicial {
-    padding: 0.5rem;
-    margin: 0.7rem;
-    border-radius: 0.3rem;
-    background-color: #23A171;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+    padding : 0.5rem;
+    margin : 0.7rem;
+    border-radius : 0.3rem;
+    background-color : #23A171;
+    color : white;
+    font-weight : bold;
+    text-decoration : none;
 }
 
 .foto_entrar {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 5rem;
+    width : 8rem;
+    height : 8rem;
+    border-radius : 5rem;
 }
 
 .foto_victoria {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 5rem;
+    width : 8rem;
+    height : 8rem;
+    border-radius : 5rem;
 }
 
 .forum_barra {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
 }
-
+    
 .barra_comentarios {
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    border: 0.1rem solid #2C5445;
-    padding: 0.5rem;
-    background-color: #2C5445;
-    color: white;
-    border-radius: 0.7rem;
-    text-decoration: none;
+    display : flex;
+    flex-direction : row;
+    margin : 1rem;
+    border : #2C5445 solid 0.1rem;
+    padding : 0.5rem;
+    background-color : #2C5445;
+    color : white;
+    border-radius : 0.7rem;
+    text-decoration : none;
 }
 
 .likes {
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.5rem;
+    width : 1rem;
+    height : 1rem;
+    margin-right : 0.5rem;
 }
 
 .nome_usuario {
-    font-weight: bold;
+    font-weight : bold;
 }
 
 .cada_comentario {
-    border: 0.1rem solid #23A171;
-    margin: 0.3rem;
-    border-radius: 0.5rem;
-    padding-left: 0.3rem;
+    border : #23A171 solid 0.1rem;
+    margin : 0.3rem;
+    border-radius : 0.5rem;
+    padding-left : 0.3rem;
 }
 
 .botao_pessoa {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
 }
 
 .pesquisa {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
+    display : flex;
+    flex-wrap : wrap;
+    padding : 2rem;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 2rem;
+    display : flex;
+    flex-direction : column;
+    flex-grow : 1;
+    padding : 2rem;
 }
 
-.form_entrar {​​
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-}​​
+.form_entrar {
+    flex-direction : column;
+    align-items : flex-start;
+}
 
-.filtros{​​
+.filtros {
+    font-weight : bold;
     width: 100%;
-    font-size: 1rem;
-    font-weight: bold;
-}​​
-
-.barra_pesquisa {​​
-    margin: 0.5rem 0rem;
-}​​
+}
 
 label {
-    margin: 0rem 1.5rem;
+    margin : 0 1.5rem;
 }
 
 .label_entrar {
-    margin: 0rem;
-    padding: 0rem;
+    margin : 0;
+    padding : 0;
 }
 
 textarea {
-    margin: 0.7rem 0rem;
+    margin : 0.7rem 0;
 }
 
 .cadastro_emp {
-    font-size: 1rem;
-    margin: 0.5rem 0rem;
-    padding-right: 0.5rem;
+    font-size : 1rem;
+    margin : 0.5rem 0;
+    padding-right : 0.5rem;
 }
 
 .radio_button {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; 
+    display : flex;
+    flex-direction : row;
+    justify-content : flex-start;
 }
 
 .botao_entrar {
-    padding: 0.5rem;
-    margin: 0.7rem;
-    border-radius: 0.3rem;
-    background-color: #23A171;
-    color: white;
-    font-weight: bold;
-    margin-right: 0%;
-    margin-left: 63%;
-    text-decoration: none;
+    padding : 0.5rem;
+    margin : 0.7rem;
+    border-radius : 0.3rem;
+    background-color : #23A171;
+    color : white;
+    font-weight : bold;
+    margin-right : 0%;
+    margin-left : 63%;
+    text-decoration : none;
 }
 
 a, .lupa {
-    text-decoration: none;
+    text-decoration : none;
 }
 
 .seta {
-    width: 2rem;
-    height: 2rem;
+    width : 2rem;
+    height : 2rem;
 }
 
-.nome { 
-    display: flex;
-    margin-right: 2.5rem;
-    flex-direction: column;
-    justify-content: center;
+.nome {
+    display : flex;
+    margin-right : 2.5rem;
+    flex-direction : column;
+    justify-content : center;
 }
 
-.botao_ok{
-    padding: 0.5rem;
-    margin: 0.7rem;
-    border-radius: 0.3rem;
-    background-color: #23A171;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+.botao_ok {
+    padding : 0.5rem;
+    margin : 0.7rem;
+    border-radius : 0.3rem;
+    background-color : #23A171;
+    color : white;
+    font-weight : bold;
+    text-decoration : none;
 }
 
 .foto_perfil {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 5rem;
+    width : 2.5rem;
+    height : 2.5rem;
+    border-radius : 5rem;
 }
 
 .foto_inscricao {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 5rem;
-    align-self: center;
+    width : 8rem;
+    height : 8rem;
+    border-radius : 5rem;
+    align-self : center;
 }
 
 select {
-    padding: 0.3rem;
+    padding : 0.3rem;
 }
 
 .caixas {
-    margin: 1rem;
-    margin-left:0;
-    border: 0.1rem solid #2C5445;
-    padding: 0.5rem;
-    background-color: #2C5445;
-    color: white;
-    border-radius: 0.7rem;
-    text-decoration: none;
+    margin : 1rem;
+    margin-left : 0;
+    border : #2C5445 solid 0.1rem;
+    padding : 0.5rem;
+    background-color : #2C5445;
+    color : white;
+    border-radius : 0.7rem;
+    text-decoration : none;
 }
 
 .configuracoes {
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    width : 2.5rem;
+    height : 2.5rem;
+    font-size : 2rem;
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : center;
+    text-decoration : none;
 }
 
 .dados_victoria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
 }
 
 li {
-    margin: 0.8rem;
+    margin : 0.8rem;
 }
 
-.lupa_clara { 
-    margin-top: 0.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-}
-.footer {
-    height: 2.5rem;
-    width: 2.5rem;
+.lupa_clara {
+    width : 1.5rem;
+    height : 1.5rem;
 }
 
-
-/* Style tab links */
 .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-evenly;
+    align-items : center;
 }
 
 .tablink {
-    color: white;
-    outline: none;
-    cursor: pointer;
-    padding: 1rem;
-    font-size: 1.2rem;
-    width: 8rem;
-  }
-  
-  .unactive{
-    float: left;
-    background-color: #23A171;
-    border: solid #2C5445;
-    border-radius: 1rem;
-    border-bottom: none;
-  }
-  
-  .active {
-    background-color: #2FD494;
-    border-top: solid #2C5445;
-    border-right: solid #2C5445;
-    border-left: solid #2C5445;
-    border-bottom: none;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-  }
+    color : white;
+    outline : none;
+    cursor : pointer;
+    padding : 1rem;
+    font-size : 1.2rem;
+    width : 8rem;
+}
 
-/* Style the tab content (and add height:100% for full page content) */
+.unactive {
+    float : left;
+    background-color : #23A171;
+    border : #2C5445 solid;
+    border-radius : 1rem;
+    border-bottom : none;
+}
+
+.active {
+    background-color : #2FD494;
+    border-top : solid #2C5445;
+    border-right : solid #2C5445;
+    border-left : solid #2C5445;
+    border-bottom : none;
+    border-top-left-radius : 1rem;
+    border-top-right-radius : 1rem;
+}
+    
 .tabcontent {
-    background-color: #2FD494;
-    color: rgb(5, 5, 5);
-    display: none;
-    padding: 2rem 1rem;
-    border: solid #2C5445;
-    border-top: none;
+    background-color : #2FD494;
+    color : rgb(5, 5, 5);
+    display : none;
+    padding : 2rem 1rem;
+    border : #2C5445 solid;
+    border-top : none;
 }
-
-.sent{
-    align-self: flex-end;
-    background-color: #2C5445;
-    padding: 0.7rem;
-    color: white;
-    border-radius: 0.7rem;
+    
+.sent {
+    align-self : flex-end;
+    background-color : #2C5445;
+    padding : 0.7rem;
+    color : white;
+    border-radius : 0.7rem;
 }
-
-
