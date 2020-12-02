@@ -1,19 +1,19 @@
 function aplicaFiltros() {
     var i=1;
-    placeholder = 'Pesquise em: '
-    lupa = document.querySelector("a[class='lupa']")
+    placeholder = 'Pesquise em: ';
+    lupa = document.querySelector("a[class='lupa']");
 
     while (i<13) {
         id = 'opcao' + i;
         if (id in localStorage) {
-            opcao = localStorage.getItem(id)
-            placeholder += opcao + ' '
+            opcao = localStorage.getItem(id);
+            placeholder += opcao + ' ';
         }
-        i++
+        i++;
     }
 
-    p = document.createElement('p')
+    p = document.createElement('p');
     lupa.before(p);
-    p.innerHTML = placeholder
-    p.classList.add('filtros')
+    p.innerHTML = placeholder;
+    p.classList.add('filtros');
 }
